@@ -66,6 +66,7 @@
 }
 
 .button__text {
+  font-family: var(--font-family, sans-serif), sans-serif;
   font-size: 14px;
   line-height: 90%;
   color:#fff;
@@ -77,7 +78,7 @@
 .card__like-button {
   max-width: 130px;
   padding: 0px 35px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: var(--font-family, sans-serif), sans-serif;
   display: grid;
   place-items: center;
   justify-content: center;
