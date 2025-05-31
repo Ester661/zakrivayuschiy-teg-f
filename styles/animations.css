@@ -75,6 +75,9 @@
   border: 2px solid var(--contour-color);
   position: relative;
   transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  border: 2px solid var(--contour-color);
+  cursor: pointer;
 }
 
 .button:focus {
@@ -83,12 +86,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--contour-color);
-}
-
-.button {
-  background-color: #fff;
-  border: 2px solid var(--contour-color);
-  cursor: pointer;
 }
 
 .button:after {
