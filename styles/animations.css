@@ -39,32 +39,6 @@
   }
 }
 
-.card__like-button:hover:after {
-  transform: scaleX(1);
-}
-
-.card__like-button:after {
-  content:'';
-  transform: scaleX(0);
-  background-color: #000;
-  display: block;
-  z-index: 0;
-  transform-origin: left;
-  position: absolute;
-  transition: transform 0.5s ease-in-out;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.card__like-button:focus-visible {
-  box-shadow: 2px 2px 0 #000;
-}
-
-.card__like-button:focus {
-  outline: none;
-}
-
 .button__text {
   font-family: var(--font-family, sans-serif), sans-serif;
   font-size: 14px;
@@ -88,4 +62,50 @@
   border: 2px solid #000;
   position: relative;
   transition: box-shadow 0.3s ease;
+}
+
+.button {
+  font-family: var(--font-family, sans-serif), sans-serif;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  background: transparent;
+  outline: 0;
+  font-size: 14px;
+  border: 2px solid var(--contour-color);
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--contour-color);
+}
+
+.button {
+  background-color: #fff;
+  border: 2px solid var(--contour-color);
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  transform: scaleX(0);
+  background-color: var(--contour-color);
+  display: block;
+  z-index: 0;
+  transform-origin: left;
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button:hover:after {
+  transform: scaleX(1);
 }
