@@ -76,7 +76,6 @@
   position: relative;
   transition: box-shadow 0.3s ease;
   background-color: #fff;
-  border: 2px solid var(--contour-color);
   cursor: pointer;
 }
 
